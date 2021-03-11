@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "FuturaPTBook";
+  src: url("/fonts/FuturaPTBook/font.woff2") format("woff2"),
+       url("/fonts/FuturaPTBook/font.woff") format("woff");
+}
+@font-face {
+  font-family: "FuturaPTDemi";
+  src: url("/fonts/FuturaPTDemi/font.woff2") format("woff2"),
+       url("/fonts/FuturaPTDemi/font.woff") format("woff");
+}
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: url("/fonts/FuturaPTMEdium/font.woff2") format("woff2"),
+       url("/fonts/FuturaPTMedium/font.woff") format("woff");
+}
+
+body {
+  background: url("../images/john-thomas-hintergrundbild.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 944px;
+  height: 244px;
+}
+
+#header {
+  font-family: "FuturaPTMedium";
+  font-size: 30px;
+  letter-spacing: 0.9px;
+  color: white;
+  align-self: flex-end;
+  line-height: 30px;
+  padding: 0 0px 22px 30px;
+  margin: 0;
+}
+
+#logo{
+  align-self: flex-start;
+  height: 74px;
+  padding: 40px 0 ;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  width: 944px;
+  height: 766px;
+}
+
+.container-element__top {
+  font-family: "FuturaPTBook";
+  font-size: 28px;
+  line-height: 38px;
+  padding: 60px 60px;
+  color: #393939;
+}
+
+
+.container-element__top p{
+  margin: 0;
+}
+
+.container-element__center {
+  display: flex;
+  flex-direction: row;
+  align-content: start;
+  padding: 0px 60px;
+}
+
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  line-height: 30px;
+  padding: 0 60px 0 0;
+  color: #393939;
+}
+
+.contact-left div{
+  font-family: "FuturaPTBook";
+  font-size: 22px;
+  line-height: 30px;
+  color: #393939;
+}
+
+.contact-right{
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.container-right__element{
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: "FuturaPTBook";
+  font-size: 16px;
+  line-height: 20px;
+  color: #393939;
+}
+
+#email {
+  margin-bottom: 19px;
+}
+
+.link {
+  font-family: "FuturaPTBook";
+  font-size: 22px;
+  line-height: 30px;
+  color: #0171E0;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+
+.footer {
+  background-color: black;
+  width: 944px;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.footer a {
+  font-family: "FuturaPTMedium";
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+  padding: 0 40px 0 0;
+  text-decoration: none;
+  padding-right: 40px;
+  margin: 0;
+}
