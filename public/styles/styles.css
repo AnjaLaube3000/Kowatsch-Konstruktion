@@ -53,7 +53,7 @@ body {
 .container {
   background-color: white;
   width: 944px;
-  height: 766px;
+  height: 916px;
 }
 
 .container-element__top {
@@ -139,7 +139,7 @@ body {
   font-family: "FuturaPTMedium";
   font-size: 16px;
   line-height: 22px;
-  color: white;
+  color: #F2F2F2;
   padding: 0 40px 0 0;
   text-decoration: none;
   padding-right: 40px;
