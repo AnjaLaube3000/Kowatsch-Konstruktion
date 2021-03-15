@@ -1,19 +1,70 @@
-@font-face {
-  font-family: "FuturaPTBook";
-  src: url("/fonts/FuturaPTBook/font.woff2") format("woff2"),
-       url("/fonts/FuturaPTBook/font.woff") format("woff");
-}
+/* Fonts & Absatzformate */
 @font-face {
   font-family: "FuturaPTDemi";
   src: url("/fonts/FuturaPTDemi/font.woff2") format("woff2"),
        url("/fonts/FuturaPTDemi/font.woff") format("woff");
 }
+
+.brand {
+  font-family: "FuturaPTDemi";
+  size: 30px;
+  letter-spacing: 0.9px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+@font-face {
+  font-family: "FuturaPTBook";
+  src: url("/fonts/FuturaPTBook/font.woff2") format("woff2"),
+       url("/fonts/FuturaPTBook/font.woff") format("woff");
+}
+
+.textMedium {
+  font-family: "FuturaPTBook";
+  font-size: 22px;
+  line-height: 30px;
+  color: #393939;
+}
+
+.textMediumLink {
+  font-family: "FuturaPTBook";
+  font-size: 22px;
+  line-height: 30px;
+  color: #0171E0;
+}
+
+.textLarge {
+  font-family: "FuturaPTBook";
+  font-size: 28px;
+  line-height: 38px;
+  color: #393939;
+}
+
+.subhead {
+  font-family: "FuturaPTBook";
+  font-size: 16px;
+  line-height: 20px;
+  color: #393939;
+}
+
 @font-face {
   font-family: "FuturaPTMedium";
   src: url("/fonts/FuturaPTMEdium/font.woff2") format("woff2"),
        url("/fonts/FuturaPTMedium/font.woff") format("woff");
 }
 
+.legalLink {
+  font-family: "FuturaPTMedium";
+  font-size: 16px;
+  line-height: 22px;
+  color: #F2F2F2;
+  text-decoration: none;
+}
+
+
+/* CSS for Viewport min-width: 1920*/
+/* @media (max-width: 1920px) {
+} */
 body {
   background: url("../images/john-thomas-hintergrundbild.jpg");
   background-position: center;
@@ -33,12 +84,7 @@ body {
 }
 
 #header {
-  font-family: "FuturaPTMedium";
-  font-size: 30px;
-  letter-spacing: 0.9px;
-  color: white;
   align-self: flex-end;
-  line-height: 30px;
   padding: 0 0px 22px 30px;
   margin: 0;
 }
@@ -57,11 +103,7 @@ body {
 }
 
 .container-element__top {
-  font-family: "FuturaPTBook";
-  font-size: 28px;
-  line-height: 38px;
   padding: 60px 60px;
-  color: #393939;
 }
 
 
@@ -85,12 +127,7 @@ body {
   color: #393939;
 }
 
-.contact-left div{
-  font-family: "FuturaPTBook";
-  font-size: 22px;
-  line-height: 30px;
-  color: #393939;
-}
+
 
 .contact-right{
   display: flex;
@@ -104,22 +141,12 @@ body {
   flex-direction: column;
 }
 
-.title {
-  font-family: "FuturaPTBook";
-  font-size: 16px;
-  line-height: 20px;
-  color: #393939;
-}
 
 #email {
   margin-bottom: 19px;
 }
 
 .link {
-  font-family: "FuturaPTBook";
-  font-size: 22px;
-  line-height: 30px;
-  color: #0171E0;
   text-decoration: none;
   margin-bottom: 15px;
 }
@@ -136,12 +163,29 @@ body {
 }
 
 .footer a {
-  font-family: "FuturaPTMedium";
-  font-size: 16px;
-  line-height: 22px;
-  color: #F2F2F2;
   padding: 0 40px 0 0;
-  text-decoration: none;
   padding-right: 40px;
   margin: 0;
 }
+
+
+
+
+@media (max-width: 1024px ) {
+
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  #logo{
+  padding: 40px 40px;
+  }
+
+
+}
+
+/* orientation: landscape
+orientation: portrait */
