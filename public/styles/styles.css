@@ -6,8 +6,9 @@
 }
 
 .brand {
-  font-family: "FuturaPTDemi";
-  size: 30px;
+  font-family: "FuturaPTDemi", Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
   letter-spacing: 0.9px;
   line-height: 30px;
   color: #FFFFFF;
@@ -20,31 +21,37 @@
 }
 
 .textMedium {
-  font-family: "FuturaPTBook";
+  font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: 300;
   font-size: 22px;
   line-height: 30px;
   color: #393939;
 }
 
 .textMediumLink {
-  font-family: "FuturaPTBook";
+  font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: 300;
   font-size: 22px;
   line-height: 30px;
   color: #0171E0;
 }
 
 .textLarge {
-  font-family: "FuturaPTBook";
+  font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: 300;
   font-size: 28px;
   line-height: 38px;
   color: #393939;
 }
 
 .subhead {
-  font-family: "FuturaPTBook";
+  font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: 300;
   font-size: 16px;
   line-height: 20px;
   color: #393939;
+  margin-top: 0px;
+  margin-bottom: 12px;
 }
 
 @font-face {
@@ -54,7 +61,8 @@
 }
 
 .legalLink {
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   color: #F2F2F2;
@@ -62,11 +70,10 @@
 }
 
 
-/* CSS for Viewport min-width: 1920*/
-/* @media (max-width: 1920px) {
-} */
+/* CSS for screen sizes ipad(orientation portrait) and bigger*/
+
 body {
-  background: url("../images/john-thomas-hintergrundbild.jpg");
+  background: url("../images/adrian-infernus_kowatsch_konstruktion.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: greenyellow;
@@ -75,11 +82,14 @@ body {
   margin: 0;
 }
 
+.width{
+  width: 944px;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 944px;
   height: 244px;
 }
 
@@ -97,6 +107,8 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   width: 944px;
   height: 916px;
@@ -107,7 +119,14 @@ body {
 }
 
 
-.container-element__top p{
+.toggleTextSize {
+  font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+  color: #393939;
+}
+
+.container-element__top p {
   margin: 0;
 }
 
@@ -116,76 +135,107 @@ body {
   flex-direction: row;
   align-content: start;
   padding: 0px 60px;
+  margin-bottom: auto;
 }
 
-.contact-left{
+.contact-left {
   display: flex;
   flex-direction: column;
-  font-size: 22px;
-  line-height: 30px;
   padding: 0 60px 0 0;
   color: #393939;
 }
 
-
-
-.contact-right{
-  display: flex;
-  flex-direction: column;
-  font-size: 22px;
-  line-height: 30px;
+.contact-left__element {
+  margin-bottom: 32px;
 }
 
-.container-right__element{
+.contact-right {
   display: flex;
   flex-direction: column;
+  padding: 0 60px 0 0;
 }
 
-
-#email {
-  margin-bottom: 19px;
+.contact-right__element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
 }
 
 .link {
   text-decoration: none;
-  margin-bottom: 15px;
 }
 
-
 .footer {
+ display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
   background-color: black;
   width: 944px;
   height: 75px;
+  margin-top: auto;
+}
+
+/* .footer-child {
   display: flex;
   flex-direction: row;
   justify-content: right;
   align-items: center;
-}
+  background-color: black;
+  width: 944px;
+  height: 75px;
+} */
+
 
 .footer a {
-  padding: 0 40px 0 0;
   padding-right: 40px;
-  margin: 0;
 }
 
 
-
-
-@media (max-width: 1024px ) {
-
-}
-
-@media (max-width: 768px) {
-  body {
+/* CSS for screen sizes between ipadPortrait and big smartphones*/
+@media (max-width: 944px) {
+  .width {
     width: 100%;
   }
 
-  #logo{
+  #logo {
   padding: 40px 40px;
   }
 
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer {
+    width: 100%;
+  }
 
 }
 
-/* orientation: landscape
-orientation: portrait */
+/* CSS for screen sizes smaller than big smartphones*/
+@media (max-width: 768px) {
+  .width {
+    width: 100%;
+  }
+
+  .container-element__center {
+   flex-direction: column;
+  }
+
+  .toggleTextSize {
+  font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  color: #393939;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
