@@ -10,13 +10,13 @@
 </head>
 
 <body>
-  <div>
+  <div class="width">
     <div class="header">
       <h1 id="header" class="brand">KOWATSCH<br>KONSTRUKTION</h1>
       <img id="logo" src="/images/KOWATSCH_Logo_w_s.svg" alt="Logo Kowatsch Konstruktion">
     </div>
     <div class="container">
-      <div class="container-element__top textLarge">
+      <div class="container-element__top toggleTextSize">
         <p>Eine wunderbare Heiterkeit hat meine ganze Seele eingenommen, Georg Kowatsch, Bautechniker und Zimmermeister, gleich den
         süßen Frühlingsmorgen, die ich mit ganzem Herzen genieße. Ich bin allein und freue mich meines Lebens in dieser Gegend,
         die für solche Seelen geschaffen ist wie die meine. Eine wunderbare Heiterkeit hat meine ganze Seele eingenommen, Georg
@@ -24,12 +24,14 @@
       </div>
       <div class="container-element__center">
         <div class="contact-left">
-          <p class="subhead">Anschrift</p>
-          <p class="textMedium">
-            Georg Kowatsch<br>
-            Am Kolberg 6<br>
-            83059 Kolbermoor<br>
-          </p>
+          <div class="contact-left__element">
+            <p class="subhead">Anschrift</p>
+            <p class="textMedium">
+              Georg Kowatsch<br>
+              Am Kolberg 6<br>
+              83059 Kolbermoor<br>
+            </p>
+          </div>
         </div>
         <div class="contact-right">
           <div class="contact-right__element" id="email">
@@ -42,10 +44,12 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer">
-      <a class="legalLink" href="AGB.html">AGB</a>
-      <a class="legalLink" href="impressum.html">Impressum</a>
+      <div class="footer">
+        <!-- <div class="footer-child"> -->
+          <a class="legalLink" href="AGB.html">AGB</a>
+          <a class="legalLink" href="impressum.html">Impressum</a>
+        <!-- </div> -->
+      </div>
     </div>
   </div>
   <script src="/scripts/bundle.js"></script>
