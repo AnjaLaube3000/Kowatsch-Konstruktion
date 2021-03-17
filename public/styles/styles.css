@@ -71,7 +71,6 @@
 
 
 /* CSS for screen sizes ipad(orientation portrait) and bigger*/
-
 body {
   background: url("../images/adrian-infernus_kowatsch_konstruktion.jpg");
   background-position: center;
@@ -82,7 +81,7 @@ body {
   margin: 0;
 }
 
-.width{
+.width {
   width: 944px;
 }
 
@@ -99,7 +98,7 @@ body {
   margin: 0;
 }
 
-#logo{
+#logo {
   align-self: flex-start;
   height: 74px;
   padding: 40px 0 ;
@@ -117,7 +116,6 @@ body {
 .container-element__top {
   padding: 60px 60px;
 }
-
 
 .toggleTextSize {
   font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
@@ -168,27 +166,17 @@ body {
 .footer {
  display: flex;
   flex-direction: row;
-  justify-content: right;
   align-items: center;
+  justify-content: flex-end;
   background-color: black;
   width: 944px;
   height: 75px;
   margin-top: auto;
 }
 
-/* .footer-child {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  align-items: center;
-  background-color: black;
-  width: 944px;
-  height: 75px;
-} */
-
-
 .footer a {
   padding-right: 40px;
+  padding-left: auto;
 }
 
 
@@ -210,8 +198,8 @@ body {
   .footer {
     width: 100%;
   }
-
 }
+
 
 /* CSS for screen sizes smaller than big smartphones*/
 @media (max-width: 768px) {
@@ -224,10 +212,10 @@ body {
   }
 
   .toggleTextSize {
-  font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
-  font-size: 22px;
-  line-height: 30px;
-  color: #393939;
+    font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    color: #393939;
   }
 
   .container {
