@@ -1,0 +1,78 @@
+/* Fonts & Absatzformate */
+@font-face {
+  font-family: "FuturaPTDemi";
+  src: url("/fonts/FuturaPTDemi/font.woff2") format("woff2"),
+       url("/fonts/FuturaPTDemi/font.woff") format("woff");
+}
+
+.brand {
+  font-family: "FuturaPTDemi", Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 0.9px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+@font-face {
+  font-family: "FuturaPTBook";
+  src: url("/fonts/FuturaPTBook/font.woff2") format("woff2"),
+       url("/fonts/FuturaPTBook/font.woff") format("woff");
+}
+
+.textMedium {
+  font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  color: #393939;
+}
+
+.textMediumLink {
+  font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  color: #0171E0;
+}
+
+.textLarge {
+  font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 38px;
+  color: #393939;
+}
+
+.subhead {
+  font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #393939;
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: url("/fonts/FuturaPTMEdium/font.woff2") format("woff2"),
+       url("/fonts/FuturaPTMedium/font.woff") format("woff");
+}
+
+.legalLink {
+  font-family: "FuturaPTMedium", Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #F2F2F2;
+  text-decoration: none;
+}
+
+.textMediumMedium {
+  font-family: "FuturaPTMedium", Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  color: #393939;
+}
