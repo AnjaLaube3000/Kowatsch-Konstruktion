@@ -1,5 +1,6 @@
 @import './fonts.css';
 
+/* CSS for screen sizes ipad(orientation portrait) and bigger*/
 body {
   background-position: center;
   background-repeat: no-repeat;
@@ -20,22 +21,23 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 244px;
-}
-
-#header {
-  align-self: flex-end;
-  padding: 0 0px 22px 30px;
-  margin: 0;
+  height: 240px;
 }
 
 .linkToMain {
   text-decoration: none;
 }
+
+#title {
+  align-self: flex-end;
+  padding: 0 0px 30px 30px;
+  margin: 0;
+}
+
 #logo {
   align-self: flex-start;
+  padding: 40px 40px 0px 0px;
   height: 74px;
-  padding: 40px 0 ;
   margin: 0;
 }
 
@@ -72,13 +74,24 @@ h2 {
   margin-top: 60px;
 }
 
-.footer a {
-  padding-right: 40px;
+.footer-left {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-right a {
+  padding-right: 30px;
   padding-left: auto;
 }
 
 .active:hover {
-  color:#215f99;
+  color:#62A2E2;
 }
 
 #AGB {
@@ -89,13 +102,53 @@ h2 {
   color:#707070;
 }
 
-.footer-right {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 40px;
+
+/* CSS for screen sizes between ipadPortrait and big smartphones*/
+@media only screen and (max-width: 944px) and (orientation: portrait){
+  .width {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+  }
 }
 
-.footer-right {
-  display: flex;
-  justify-content: flex-end;
+
+/* CSS for screen sizes smaller than big smartphones*/
+@media only screen and (max-width: 768px){
+  .width {
+    width: 100%;
+  }
+
+  .header {
+    height: 300px;
+  }
+
+  /* .toggleTextSize {
+    font-family: "FuturaPTBook", Futura, Trebuchet MS, Arial, sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    color: #393939;
+  } */
+
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    padding: 30px 30px 0px 30px;
+  }
+
+  .paragraphs {
+    padding: 0px 30px 30px 30px;
+  }
+
+  .footer {
+    width: 100%;
+  }
 }

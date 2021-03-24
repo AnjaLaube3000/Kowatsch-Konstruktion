@@ -23,20 +23,24 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 244px;
+  height: 240px;
 }
 
-#header {
+#title {
   align-self: flex-end;
-  padding: 0 0px 22px 30px;
+  padding: 0 0px 30px 30px;
   margin: 0;
 }
 
 #logo {
   align-self: flex-start;
+  padding: 40px 40px 0px 0px;
   height: 74px;
-  padding: 40px 0 ;
   margin: 0;
+}
+
+.linkToMain {
+  text-decoration: none;
 }
 
 .container {
@@ -81,6 +85,11 @@ body {
   margin-bottom: 32px;
 }
 
+#address {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .contact-right {
   display: flex;
   flex-direction: column;
@@ -98,7 +107,7 @@ body {
 }
 
 .footer {
- display: flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
@@ -109,27 +118,22 @@ body {
 }
 
 .footer a {
-  padding-right: 40px;
+  padding-right: 30px;
   padding-left: auto;
 }
 
 .footer a:hover {
-  color:#215f99;
+  color:#62A2E2;
 }
 
 /* CSS for screen sizes between ipadPortrait and big smartphones*/
-@media (max-width: 944px) {
+@media only screen and (max-width: 944px) and (orientation: portrait){
   .width {
     width: 100%;
   }
 
-  #logo {
-  padding: 40px 40px;
-  }
-
   .container {
     width: 100%;
-    height: 100%;
   }
 
   .footer {
@@ -139,13 +143,26 @@ body {
 
 
 /* CSS for screen sizes smaller than big smartphones*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px){
   .width {
     width: 100%;
   }
 
+  .header {
+    height: 300px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container-element__top {
+    padding: 30px 30px 30px 30px;
+  }
+
   .container-element__center {
-   flex-direction: column;
+    flex-direction: column;
+    padding: 30px 30px 30px 30px;
   }
 
   .toggleTextSize {
@@ -153,11 +170,6 @@ body {
     font-size: 22px;
     line-height: 30px;
     color: #393939;
-  }
-
-  .container {
-    width: 100%;
-    height: 100%;
   }
 
   .footer {
