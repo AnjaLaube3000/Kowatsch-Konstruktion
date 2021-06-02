@@ -94,12 +94,10 @@ h2 {
   color:#62A2E2;
 }
 
-#AGB {
-  color:#707070;
-}
 
 #imp {
   color:#707070;
+  pointer-events: none;
 }
 
 
