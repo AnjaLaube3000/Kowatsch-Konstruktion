@@ -56,7 +56,7 @@
 
 @font-face {
   font-family: "FuturaPTMedium";
-  src: url("/fonts/FuturaPTMEdium/font.woff2") format("woff2"),
+  src: url("/fonts/FuturaPTMedium/font.woff2") format("woff2"),
        url("/fonts/FuturaPTMedium/font.woff") format("woff");
 }
 
