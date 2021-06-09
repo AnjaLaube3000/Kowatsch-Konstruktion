@@ -127,7 +127,7 @@ body {
 }
 
 /* CSS for screen sizes between ipadPortrait and big smartphones */
-@media only screen and (max-width: 944px) {
+@media only screen and (max-width: 944px){
   .width {
     width: 100vw;
   }
@@ -143,18 +143,13 @@ body {
 
 
 /* CSS for screen sizes smaller than big smartphones*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px){
   .width {
     width: 100%;
   }
 
   .header {
     height: 300px;
-  }
-
-  .container {
-    width: 100%;
-    height: 100%;
   }
 
   .container-element__top {
@@ -171,9 +166,5 @@ body {
     font-size: 22px;
     line-height: 30px;
     color: #393939;
-  }
-
-  .footer {
-    width: 100%;
   }
 }
