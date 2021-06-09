@@ -118,13 +118,6 @@ h2 {
 }
 
 
-/* @media only screen and (max-width: 830px){
-  .container {
-    height: 100vh;
-  }
-} */
-
-
 /* CSS for screen sizes smaller than big smartphones*/
 @media only screen and (max-width: 768px){
   .width {
