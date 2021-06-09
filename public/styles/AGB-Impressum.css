@@ -47,6 +47,7 @@ body {
   background-color: white;
   width: 944px;
   color: #707070;
+  height: calc(100%vh - 240px);
 }
 
 h1 {
@@ -71,7 +72,7 @@ h2 {
   background-color: black;
   width: 944px;
   height: 75px;
-  margin-top: 60px;
+  margin-top: auto;
 }
 
 .footer-left {
@@ -130,6 +131,7 @@ h2 {
 
   .container {
     width: 100%;
+    height: calc(100%vh - 300px);
   }
 
   h1 {
